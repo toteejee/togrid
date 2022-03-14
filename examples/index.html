@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToTeeJee Grid Example</title>
+    <link href="css/index.2022.03.11.css" rel="stylesheet" />
+    <link href="css/grid.2022.03.11.css" rel="stylesheet" />
+    <link href="css/data.2022.03.11.css" rel="stylesheet" />
+    <script src="js/wasm_exec.2021.10.25.js"></script>
+    <script src="js/wasm_app.2022.03.11.js"></script>
+    <script>
+        (async function () {
+            const r = await modWASM.load("wasm/toteejee.2022.03.11.wasm", "togrid");
+            if (r == "ok") {
+                console.log("OK loading wasm");
+                togrid.init('gridIndex').then(console.log('Init ToJeeGrid Examples Grid'));
+            } else {
+                console.log("PROBLEM loading wasm")
+            }
+        })();
+    </script>
+    <style>
+        .asc:after {
+            content: " \2191";
+        }
+
+        .desc:after {
+            content: " \2193";
+        }
+    </style>
+</head>
+<body>
+    <div id="divTotal">
+        <div id="divHeader">
+            <h1>Examples ToTeeJee ToGrid</h1>
+        </div>
+        <div id="divMain">
+            <div>
+                <div id="gridIndex" data-level="3" class="GridRoot">
+                    <div>
+                        <div>Name</div>
+                        <div>Link</div>
+                        <div>Info</div>
+                    </div>
+                    <div>
+                        <div>Basic table</div>
+                        <div>
+                            <a href="basic/tablepage.html" target="_blank">Basic table 4 level nested</a>
+                        </div>
+                        <div>
+                            Loads
+                        </div>
+                    </div>
+                    <div>
+                        <div>Basic div</div>
+                        <div>
+                            <a href="basic/divpage.html" target="_blank">Basic div 4 level nested</a>
+                        </div>
+                        <div>
+                            Loads
+                        </div>
+                    </div>
+                    <div>
+                        <div>Basic table load</div>
+                        <div>
+                            <a href="javascript:toget.load('grid/examples/basic/tablesingle.html', 'divMainRight', this)">Basic table 4 level nested</a>
+                        </div>
+                        <div>
+                            Loads:&nbsp;<a href="basic/tablesingle.html" target="_blank">tablesingle.html</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Basic div load</div>
+                        <div>
+                            <a href="javascript:toget.load('grid/examples/basic/divsingle.html', 'divMainRight', this)">Basic div 4 level nested</a>
+                        </div>
+                        <div>
+                            Loads
+                        </div>
+                    </div>                  
+                    <div>
+                        <div>Search</div>
+                        <div>
+                            <a href="basic/search.html" target="_blank">Search</a>
+                        </div>
+                        <div>
+                            Loads
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divMainRight">                
+            </div>
+        </div>
+        <div id="divFooter">
+        </div>
+    </div>
+</body>
+</html>

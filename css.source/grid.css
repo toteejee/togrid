@@ -1,0 +1,9 @@
+.dummyss{
+    font-size:large;
+}
+
+div.mIndex {
+    display: grid;
+    grid-template-columns: 1vw 1fr 1vw;
+    width: 100%;
+}

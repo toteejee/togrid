@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* TODO https://dev.to/caicindy87/responsive-background-image-using-css-4oo4 */
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    transition: background-image 2s ease-in-out;
+    /* See modImage.changeBGHeader */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+        /* background-position-y: -25%;*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+        /* background-position-y: -50%;   */
+    }
+}
+
+@media screen and (max-height: 600px) {
+    html {
+        font-size: 15px;
+        /* background-position-x: -25%;*/
+    }
+}
+
+@media screen and (max-height: 400px) {
+    html {
+        font-size: 13px;
+        /*  background-position-x: -50%;    */
+    }
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    height: 100vh;
+    background-image: url(/logo/background.svg);
+    background-repeat: no-repeat;    
+}
+
+body > div{
+    padding-top: 1rem;
+}
+
+div.invis {
+    /* position: absolute !important;*/
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}

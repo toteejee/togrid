@@ -11,7 +11,7 @@ Download Example Dir and run examples on - local - http Server    <br />
     <br />
         &#9744; 1. Download the total content of Examples Dir.
             Source:
-                [Examples](https://github.com/toteejee/togrid/tree/main/examples)              
+                [Examples](https://grid.teejee.com/examples/)              
         <br />
 Or more detail steps to make it work.    <br />
     <br />
@@ -35,7 +35,7 @@ Or more detail steps to make it work.    <br />
         <br />
         &#9744; 7. Copy and study Grid Examples.
             Source:
-                [ToTeejee Grid Examples](https://github.com/toteejee/togrid/tree/main/examples)              
+                [ToTeejee Grid Examples](https://grid.teejee.com/examples/)              
         <br />
         &#9744; 8. Open your html page(s) via - local - webserver to test results.
         <br />

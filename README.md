@@ -35,7 +35,7 @@ Or more detail steps to make it work.    <br />
         <br />
         &#9744; 7. Copy and study Grid Examples.
             Source:
-                [ToTeejee Grid Examples](https://grid.teejee.com/examples/)              
+                [Teejee Grid Examples](https://grid.teejee.com/examples/)              
         <br />
         &#9744; 8. Open your html page(s) via - local - webserver to test results.
         <br />
